@@ -4,10 +4,11 @@ import time
 import json
 import multiprocessing
 import random
-
-path='/home/yousuf123/mysite/data/data.js'
-path2="/home/yousuf123/mysite/topics.js"
-path3="/home/yousuf123/mysite/messages.js"
+import os
+p=os.path.dirname(__file__)
+path=f'{p}/data/data.js'
+path2=f"{p}/mysite/topics.js"
+path3=f"{p}/mysite/messages.js"
 server=socket.socket()
 server.bind(("",1414))
 server.listen(1)
