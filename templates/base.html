@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+	<title>{%block title%}{%endblock%}</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles/base.css')}}">
+	<meta charset="utf-8">
+	{%block mta%}
+	<meta name="keywords" content="topic, free topics, freedom , python ,yousuf wibsite">
+	<meta name="description" content="type whatever you want of topics intruduce your self ...">
+	<meta name="author" content="yousuf">
+	<meta http-equiv="refresh" content="40000">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{%endblock%}
+</head>
+<body>
+	<div id='nv'>
+
+	<nav>
+		<div class='urls'>
+
+			<ul>
+				<li><a href="/">home</a></li>
+				<li><a href="https://www.google.com/">google</a></li>
+				<li><a href="https://stackoverflow.com/">stackoverflow</a></li>
+				<li><a href="https://github.com/yousuf60">github</a></li>
+			</ul>
+
+		</div>
+	</nav>
+	<h4>welcome to my site</h4>
+	<div  class='formm'>
+	{%block flash_mess%}{%endblock%}
+	</div>
+	{%block frm%}{%endblock%}
+</div>
+</body>

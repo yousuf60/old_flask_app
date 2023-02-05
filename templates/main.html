@@ -1,0 +1,44 @@
+{%extends 'base.html'%}
+{%block title%}home page{%endblock%}
+
+
+{%block flash_mess%}
+<div class='formma'>
+	{%with message=get_flashed_messages(with_categories=True)%}
+		{%if message%}
+			{%for category,i in message%}
+				{%if category == 'no'%}
+			        <h3> not allowed {{i}}</h3>
+
+				{%endif%}
+			{%endfor%}
+
+
+		{%endif%}
+	{%endwith%}
+<form method='post'>
+	<label>type any</label><br>
+	<textarea rows='4' cols ='50' name='ANY'></textarea><br>
+	<button type='submit' class="btn">submit</button>
+</form>
+</div>
+{%for i in k%}
+{%if a=="yes"%}
+<form method="post" action="{{url_for('delete',name='%s'%(i))}}">
+<button class="btn" >delete</button></form>
+{%endif%}
+<div class='topic'>
+
+{%for z in k[i].split("\n")%}
+<p>
+	{{z}}
+</p>
+{%endfor%}
+
+
+</div><br>
+
+{%endfor%}
+<br>
+
+{%endblock%}

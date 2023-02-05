@@ -1,0 +1,117 @@
+
+body{
+	background-color: #6D9EC3;
+	margin:0px;
+}
+
+h4 {
+	padding: 5px;
+	color:#803361;
+
+	text-align:center;
+}
+h3{
+	color:#B30B1C;
+	padding-left:40%;
+
+}
+.btn{width:150px;
+    height:40px;
+    background-color: #F81E07;
+    border-color:#F81E07;
+    border-radius: 8px ;
+    margin-left:30%;
+
+
+}
+
+button:hover{
+	background-color:black;
+	color:white;
+    border-color:black;
+	margin:red ;
+}
+
+
+}
+#nv{
+	background-color: rgba(51, 51, 51, 1);
+	overflow: hidden;
+
+}
+nav a{
+
+	color:#f2f2f2;
+
+	text-align:center;
+	padding:5% 1%;
+	text-decoration: none;
+
+	background-color: #333;
+}
+nav a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+nav a:active{
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+
+
+li{
+	display: inline;
+
+
+}
+
+
+.formm .formma{
+	padding-left:10%;
+}
+.formm .formma textarea{
+	width:70%;
+	height:130px;
+}
+.topic{
+	background-color:#462C2C;
+	color:white;
+	word-break:break-all;
+	display:block;
+	border:4px red solid;
+	border-radius: 10px;
+
+
+}
+.urls{
+	width:100%;
+	background: #333;
+
+	overflow:hidden;
+
+
+}
+#admin{
+	padding-left:30%;
+
+}
+#admin button{
+    margin-left:15%;
+
+}
+input{
+	width:60%;
+	height:30px;
+}
+
+
+
+
+
+
+
+
